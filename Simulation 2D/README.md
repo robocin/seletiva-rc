@@ -1,8 +1,6 @@
 # Simulation 2D C++
 
-Para o agente funcionar instalar:
-librscs:
-https://pt.osdn.net/projects/rctools/downloads/51941/librcsc-4.1.0.tar.gz/
+Para instalar o ambiente de simulação, seguir os passos em https://github.com/robocin/simulation-2d .
 
 ## Configurar ambiente e compitilar
 
