@@ -33,7 +33,3 @@ $ make [-j<n_cpus>]
 $ cd src
 $ ./start.sh
 ```
-
-## Formation Edition
-
-[Manual](https://github.com/robocin/simulation-2d-cpp/blob/cso-newFormations-65/src/formations-robocin/FormationEdition.md)
