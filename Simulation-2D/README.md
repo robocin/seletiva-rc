@@ -1,6 +1,6 @@
 # Simulation 2D C++
 
-Para instalar o ambiente de simulação, seguir os passos em https://github.com/robocin/seletiva-rc/tree/master/Simulation%202D/robocup-soccer-simulator .
+Para instalar o ambiente de simulação, seguir os passos em https://github.com/robocin/seletiva-rc/tree/master/Simulation-2D/robocup-soccer-simulator .
 
 ## Configurar ambiente e compitilar
 
