@@ -29,7 +29,27 @@ $ make [-j<n_cpus>]
 
 ## Rodar time
 
+1. Primeiro inicie o server:
+
+Ao final do jogo os logs estarão no diretório onde o servidor foi iniciado
+
+```sh
+$ rcsssserver
+```
+
+2. Conectar o monitor
+```sh
+$ rcssmonitor
+```
+
+3. Iniciar time 1
 ```sh
 $ cd src
-$ ./start.sh
+$ ./start.sh -t <NOME_TIME1>
+```
+
+3. Iniciar time 2
+```sh
+$ cd src
+$ ./start.sh -t <NOME_TIME2>
 ```
