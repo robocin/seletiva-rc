@@ -53,3 +53,5 @@ $ ./start.sh -t <NOME_TIME1>
 $ cd src
 $ ./start.sh -t <NOME_TIME2>
 ```
+## Extrair Logs
+Seguir os passos em https://github.com/robocin/seletiva-rc/tree/master/Simulation-2D/logs/rcssLogExtractor .
