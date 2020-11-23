@@ -1,11 +1,32 @@
 # Simulation 2D C++
 
+# Locais importantes
+```
+├── binaries
+│   ├── robocin-2019-10-26.tgz
+│   ├── ITAndroids_SS2D_RC2019_R3_BIN.tar.gz
+│   └── titans-2019-10-25.tgz
+├── logs
+│   ├── robocup
+│   └── rcssLogExtractor
+├── robocup-soccer-simulator
+│   ├── rcsslogplayer
+│   ├── rcssmonitor
+│   └── rcssserver
+├── src
+│   ├── chain-action
+│   ├── formation-dt
+│   ├── formations-keeper
+│   └── formations-taker
+└── README.md
+```
+
+# Instalar o ambiente em /robocup-soccer-simulation
 O ambiente da categoria de simulação 2D é composto de três módulos principais:
 - rcssserver: o servidor principal onde os jogos acontecem.
 - rcssmonitor: uma ferramenta para assistir o jogo em execução.
 - rcsslogplayer: um gerador de registros (logs) dos jogos.
 
-# Instalar o ambiente
 ### 1. Instalação de libs para auxiliar na build do ambiente. 
 ```
 sudo apt-get install libaudio-dev libpng-dev libxi-dev libglib2.0-dev libfontconfig-dev libxrender-dev libtool libboost-all-dev autoconf libqt4-dev libxt-dev
