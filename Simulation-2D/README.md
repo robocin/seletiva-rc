@@ -21,7 +21,7 @@ sudo make install
 cd ..
 ```
 
-#### 2.3 - rcsslogplayer
+#### 2.2 - rcsslogplayer
 ```
 cd rcsslogplayer
 sudo ./bootstrap
