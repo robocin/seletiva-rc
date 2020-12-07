@@ -13,6 +13,8 @@ The log extractor can be found in _./bin/rcssLogExtractor_ for Linux and _./bin/
 
 If no output directory is given, the output will appear in the default path.
 
+    $ ./rcssLogExtractor  # Extract all .rcg files in current directory to .rcg.csv
+
 For more informations use:
 
     $ ./rcssLogExtractor -h

@@ -1,8 +1,66 @@
 # Simulation 2D C++
 
-Para instalar o ambiente de simulação, seguir os passos em https://github.com/robocin/seletiva-rc/tree/master/Simulation-2D/robocup-soccer-simulator .
+# Locais importantes
+```
+├── binaries
+│   ├── robocin-2019-10-26.tgz
+│   ├── ITAndroids_SS2D_RC2019_R3_BIN.tar.gz
+│   └── titans-2019-10-25.tgz
+├── logs
+│   ├── robocup
+│   └── rcssLogExtractor
+├── robocup-soccer-simulator
+│   ├── rcsslogplayer
+│   ├── rcssmonitor
+│   └── rcssserver
+├── src
+│   ├── chain-action
+│   ├── formation-dt
+│   ├── formations-keeper
+│   └── formations-taker
+└── README.md
+```
 
-## Configurar ambiente e compitilar
+# Instalar o ambiente em /robocup-soccer-simulation
+O ambiente da categoria de simulação 2D é composto de três módulos principais:
+- rcssserver: o servidor principal onde os jogos acontecem.
+- rcssmonitor: uma ferramenta para assistir o jogo em execução.
+- rcsslogplayer: um gerador de registros (logs) dos jogos.
+
+### 1. Instalação de libs para auxiliar na build do ambiente. 
+```
+sudo apt-get install libaudio-dev libpng-dev libxi-dev libglib2.0-dev libfontconfig-dev libxrender-dev libtool libboost-all-dev autoconf libqt4-dev libxt-dev
+```
+### 2. Instalar cada um dos componentes
+#### 2.1 - rcssserver
+```
+cd rcssserver
+sudo ./bootstrap
+sudo ./configure
+sudo make
+sudo make install
+cd ..
+```
+
+#### 2.2 - rcsslogplayer
+```
+cd rcsslogplayer
+sudo ./bootstrap
+sudo ./configure
+sudo make
+sudo make install
+cd ..
+```
+#### 2.3 - rcssmonitor
+```
+cd rcssmonitor
+sudo ./bootstrap
+sudo ./configure
+sudo make
+sudo make install
+```
+
+### 3. Configurar ambiente e compilar
 
 ```sh
 $ mkdir build && cd build
@@ -14,9 +72,10 @@ $ make [-j<n_cpus>]
 
 1. Crie as classes no /src nome_classe.h e nome_classe.cpp 
 
-2. Configure o CMakeList.txt para poder compilar as classes
-```
-Linha 29 do CMakeList.txt tem set([arquivos]). Inclua seus .cpp no fim.
+2. Para que suas classes sejam entendidas e compiladas pelo código, é necessário fazer configurações adicionais no CMakeList.txt.
+```cpp
+ //Linha 31 do CMakeList.txt:
+ set([arquivos]) //Inclua seus .cpp no final.
 ```
 
 3. Reconfigure o ambiente em /simulation-2d-cpp/
@@ -24,7 +83,7 @@ Linha 29 do CMakeList.txt tem set([arquivos]). Inclua seus .cpp no fim.
 ```sh
 $ mkdir build && cd build
 $ cmake ..
-$ make [-j<n_cpus>]
+$ make [-j<n_cpus>] // <n_cpus> =  número de threads que serão alocadas para rodar o ambiente.
 ```
 
 ## Rodar time
