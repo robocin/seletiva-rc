@@ -25,6 +25,24 @@
 └── README.md
 ```
 
+## Compilando time
+
+* Na primeira vez que compilamos precisamos configurar o cmake.
+
+```sh
+$ mkdir build && cd build
+$ cmake ..
+$ make -jn
+```  
+Obs: em `-jn` n se refere ao número de nucleos utilizados na compilação, portanto caso tenha dois nucleos faça `-j2`. Para descobrir o número de nucleos rode o comando `$ nproc` no terminal do seu linux.  
+
+* Após compilada a primeira vez:  
+
+```sh
+$ cd build
+$ make -j<nproc>
+```
+
 
 ## Rodar os times de 2D
 
